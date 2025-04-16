@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+<div class = "card" style = "margin-top: -50px; max-width: 500px; text-align:center;">
+    <h2>
+        Welcome, <strong>{{ username }}!</strong>
+    </h2>
+    <p>
+        You are logged into the SecureGov Portal.
+    </p>
+    {% if is_admin %}
+        <div style="margin-top: 1.5rem;">
+            <a href = "/vault" class = "btn-link"> Access Admin Vault</a><br><br>
+            <a href = "/admin/reports" class = "btn-link"> View Submitted Reports</a>
+        </div>
+    {% endif %}
+</div>
+{% endblock %}

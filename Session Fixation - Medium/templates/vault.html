@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="popup-overlay" id = "vault-popup">
+    <div class = "popup-card animate-pop">
+        <h1 style = "color: #28a745">✅ ACCESS GRANTED</h1>
+        <p>You have successfully authenticated as an administrator.</p>
+        <p>The following classified flag has been retrieved from the SecureGov Vault:</p>
+        <p><strong><code>{{ flag }}</code></strong></p>
+        <p style = "font-size: 0.9rem; opacity: 0.8;">Keep this confidential. This access will be logged.</p>"
+        <button onclick = "closePopup()">Close</button>
+    </div>
+</div>
+<script>
+    function closePopup(){
+        document.getElementById("vault-popup").style.display = "none";
+    }
+</script>
+{% endblock %}

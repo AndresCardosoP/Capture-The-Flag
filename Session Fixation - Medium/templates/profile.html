@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% block content %}
+<div class = "card" style = "margin-top: -50px; max-width: 500px; text-align:center;">
+    <h2>Your Profile</h2>
+    <p><strong>Username:</strong> {{ session.username }}</p>
+    <p><strong>Access Level:</strong> {{ 'Admin' if session.is_admin else 'User' }}</p>
+</div>
+{% endblock %}

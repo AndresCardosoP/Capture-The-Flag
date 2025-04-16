@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+    <div class = "card" style = "margin-top: -50px; max-width: 500px; text-align:center;">
+        <h2 style = "text-align: center;">
+        Submitted Reports
+        </h2>
+        {% for report in reports %}
+            <div class = "card">
+                <h3>{{ report.title }}</h3>
+                <p><strong>Author:</strong> {{ report.username }}</p>
+                <p>{{ report.content }}</p>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}
