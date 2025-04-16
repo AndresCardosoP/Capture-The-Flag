@@ -8,10 +8,8 @@ CobraLogs is a logging application designed to demonstrate the concept of PHP in
 cobralogs-ctf
 ├── public
 │   ├── index.php
-│   └── export_logs.php
-├── lib
-│   └── AdminBackdoor.php
-├── logs
+│   └── logs
+|   └── tmp
 ├── Dockerfile
 └── README.md
 ```
@@ -20,7 +18,7 @@ cobralogs-ctf
 1. **Clone the Repository**
    ```
    git clone <repository-url>
-   cd cobralogs-ctf
+   cd insecure_deserialization-Medium-Hard
    ```
 
 2. **Build the Docker Image**
