@@ -10,7 +10,6 @@ Please add the names and GitHub usernames of all group members, as of the time o
 | 1  | James Mata           | JamesMeta       |
 | 2  | Andres Cardoso       | AndresCardosoP       |
 | 3  | NimreetGill        | NimreetGill       |
-| 4  | first4 last4        | username4       |
 
 ## How to Sign-Up
 
